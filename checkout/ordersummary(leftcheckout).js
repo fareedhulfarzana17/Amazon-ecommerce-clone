@@ -1,7 +1,7 @@
 import{cart,localStorageCart,updatecartquantity,wholequantity,updateincheckout} from "../cart.js";
 import{products} from "../data.js";
 import{caculatedeliverydate}from "../deliverydays.js";
-import{paymentsummary} from "../checkout/paymentsummary(rightcheckout).js";
+import{paymentsummary} from "./checkout/paymentsummary(rightcheckout).js";
 
  
 export function ordersummary(){
