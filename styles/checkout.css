@@ -1,0 +1,152 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  
+  
+}
+.coloritemsspan{
+  color:rgb(73, 117, 228);
+}
+.h-logo-img{
+  width:100px;
+}
+.h-lockicon {
+  color:grey;
+  font-size: 30px;
+}
+.h-checkoutstext{
+  font-size: 25px;
+}.ordertextdivimg{
+  width:100px;
+}
+.ordertextdiv{
+  display:grid;
+  grid-template-columns: 1fr 200px 300px;
+  width:500px;
+  padding:20px;
+  column-gap: 30px;
+  
+}
+.headingtext{
+  font-size: 25px;
+  padding: 20px;
+}
+.deliverydate{
+  color:green;
+   font-size: 23px;
+  
+
+}
+.order{
+  border:1px solid rgb(218, 214, 214);
+  padding:20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  width: 570px;
+  height: fit-content;
+  align-items: center;
+
+
+}
+
+.productname{
+  font-weight: bolder;
+  font-size: 18px;
+}
+.price{
+  color:maroon;
+  font-weight: bolder;
+}
+.quantity{
+  font-size: 18px;
+  display: inline-flex;
+
+}
+.productdetails{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  
+}
+.deliveryoptionstext{
+  font-size: 18px;
+  color:black;
+  margin-bottom: 5px;
+  font-size: 18px;
+
+}
+.deliveryoptions{
+  color:green;
+  font-size: 18px;
+}
+.shippingtext{
+  color:gray
+}
+
+
+.update
+{
+  display: inline-flex;
+  color:rgb(73, 117, 228);
+  cursor: pointer;
+  font-size: 18px;
+
+
+}
+.delete{
+  display: inline-flex;
+    color:rgb(73, 117, 228);
+    cursor: pointer;
+    font-size: 18px;
+
+
+}
+.whole-left-container{
+  display:grid;
+  row-gap: 10px;
+  margin-bottom:20px;
+}
+.whole-right-container{
+  border: 1px solid  rgb(218, 214, 214);
+  border-radius: 5px;
+  width:400px;
+  padding:30px;
+  height:200px;
+  justify-content: space-between;
+  column-gap: 20px;
+  display:flex;
+  flex-direction:column;
+  column-gap: 25px;
+  margin-left:20px;
+  
+  
+ 
+}
+
+.placebutton{
+  padding:15px 0px 15px 0px;
+  background-color: #ffd814;
+  border:none;
+  width:400px;
+  text-align: center;
+  border-radius: 5px;
+  cursor:pointer;
+
+}
+.ordertotaltext{
+  color:maroon;
+  font-weight: bolder;
+  font-size:20px;
+}
+.whole-container{
+  display:flex;
+  align-items: start;
+}
+
+

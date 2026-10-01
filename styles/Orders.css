@@ -1,0 +1,163 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+.h-logo{
+  margin-left:18px;
+  cursor: pointer;
+}
+header{
+  background-color:#151d28;
+  gap:50px;
+  color:white;
+  align-items: center;
+  text-align: center;
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  padding:5px;
+  
+  
+  
+}
+.h-searchbarinput{
+  width:900px;
+  padding:15px;
+  border:none;
+  border-radius: 5px;
+  
+}
+.h-searchbarinput::placeholder{
+  color: grey;
+  font-size: 15px;
+  
+}
+.h-searchbar{
+  position: relative;
+
+}
+.h-searchbaricon{
+  position:absolute;
+  left:900px;
+  padding:15px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: orange;
+
+}
+.h-returnorders{
+  width:5px;
+  margin-left:20px;
+  cursor: pointer;
+
+}
+.h-cart i{
+ font-size: 40px;
+
+}
+.h-cart{
+ position:relative;
+ margin-right:20px;
+ cursor: pointer;
+}
+.h-cart p{
+  position: absolute;
+  color:orangered;
+  top:3px;
+  left:22px;
+  font-weight: bolder ;
+  
+  
+} 
+
+.orderplacedheader{
+  display:grid;
+  grid-template-columns: 1fr 3fr 2fr; 
+  background-color: rgb(247, 243, 243); 
+  padding:20px;
+  border:1px solid rgb(199, 197, 197);
+  margin: 10px 10px -1px 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+.heading{
+  font-size: 18px;
+  font-weight: bold;
+
+}
+.imgdiv img{
+  width:100px;
+}
+.product{
+  display:grid;
+  grid-template-columns: 1fr 3fr 2fr;
+   padding:20px;
+  padding-top: 15px;
+  column-gap: 10px;
+  
+ 
+}
+.orderplacedbody{
+   padding:10px;
+  padding-top: 15px;
+  column-gap: 10px;
+  border: 1px solid  rgb(199, 197, 197);
+  margin:0px 10px 10px 10px;
+  border-radius: 0px 0px 5px 5px;
+
+}
+.productname{
+  font-weight: bolder;
+  font-size: 18px;
+
+}
+.buyitagainbutton{
+  background-color: #ffd814;
+  padding:10px 20px 10px 20px;
+  width: 200px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor:pointer;
+  
+}
+.orderplaced{
+  width:900px;
+  margin:20px;
+  
+}
+.trackbuttonclass a{
+   text-decoration: none;
+  color:black;
+}
+.trackbuttonclass{
+   background-color: rgb(248, 245, 245);
+  padding:10px 20px 10px 20px;
+  width: 200px;
+  border:1px solid rgb(218, 217, 217);
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+
+}
+.textdiv{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+}
+.wholebody{
+  display:grid;
+  justify-content: center;
+  margin:20px;
+}
+.wholebody h1{
+  margin:20px;
+}
+.arrivetext{
+  font-size: 18px;
+}
+.quantitytext{
+  font-size: 18px;
+
+}
+
