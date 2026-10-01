@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson-14(14l)</title>
+<!--in this i have to change the updated quantity value in checkout quantity and wole quantity but i have already done this in the previos exercise-->
+  <style>
+    
+*{
+  margin:0px;
+  padding: 0px;
+  }
+header
+{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  
+  
+}
+.coloritemsspan{
+  color:rgb(73, 117, 228);
+}
+.h-logo-img{
+  width:100px;
+}
+.h-lockicon {
+  color:grey;
+  font-size: 30px;
+}
+.h-checkoutstext{
+  font-size: 25px;
+}.ordertextdivimg{
+  width:100px;
+}
+.ordertextdiv{
+  display:grid;
+  grid-template-columns: 1fr 200px 300px;
+  width:500px;
+  padding:20px;
+  column-gap: 30px;
+  
+}
+.headingtext{
+  font-size: 25px;
+  padding: 20px;
+}
+.deliverydate{
+  color:green;
+  font-size: 23px;
+  
+
+}
+.order{
+  border:1px solid rgb(218, 214, 214);
+  padding:20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  width: 570px;
+  height: fit-content;
+  align-items: center;
+
+
+}
+
+.productname{
+  font-weight: bolder;
+  font-size: 18px;
+}
+.price{
+  color:maroon;
+  font-weight: bolder;
+}
+.quantity{
+  font-size: 18px;
+  display: inline-flex;
+
+}
+.productdetails{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  
+}
+.deliveryoptionstext{
+  font-size: 18px;
+  color:black;
+  margin-bottom: 5px;
+  font-size: 18px;
+
+}
+.deliveryoptions{
+  color:green;
+  font-size: 18px;
+}
+.shippingtext{
+  color:gray
+}
+
+
+.update
+{
+  display: inline-flex;
+  color:rgb(73, 117, 228);
+  cursor: pointer;
+  font-size: 18px;
+
+
+}
+.inputupdate{
+  width:30px;
+  height:20px;
+  padding:2px;
+  display:none;
+
+}
+.save{
+  color:rgb(73, 117, 228);
+  cursor: pointer;
+  font-size: 18px;
+  display:none;
+
+}
+.active{
+  display:inline-flex;
+}
+.inactive{
+  display:none;
+  }
+.delete{
+  display: inline-flex;
+    color:rgb(73, 117, 228);
+    cursor: pointer;
+    font-size: 18px;
+
+
+}
+.whole-left-container{
+  display:grid;
+  row-gap: 10px;
+  margin-bottom:20px;
+}
+.whole-right-container{
+  border: 1px solid  rgb(218, 214, 214);
+  border-radius: 5px;
+  width:400px;
+  padding:30px;
+  height:200px;
+  justify-content: space-between;
+  column-gap: 20px;
+  display:flex;
+  flex-direction:column;
+  column-gap: 25px;
+  margin-left:20px;
+  
+  
+ 
+}
+
+.placebutton{
+  padding:15px 0px 15px 0px;
+  background-color: #ffd814;
+  border:none;
+  width:400px;
+  text-align: center;
+  border-radius: 5px;
+  cursor:pointer;
+
+}
+.ordertotaltext{
+  color:maroon;
+  font-weight: bolder;
+  font-size:20px;
+}
+.whole-container{
+  display:flex;
+  align-items: start;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <header class="headerclass">
+    <a href="amazon.html">
+    <div class="h-logo">
+      <img src="images/amazon-black-logo.png" class="h-logo-img" >
+    </div>
+    </a>
+    <p class="h-checkoutstext">Checkout (<span class="coloritemsspan jscartquantity">
+  </span>
+)</p>
+<div class="h-lockicon">
+ <i class="fa-solid fa-lock"></i>
+</div>
+  </header>
+   <div class="headingtextdiv">
+  <h3 class="headingtext">Review your order</h3>
+  </div>
+  <div class="whole-container">
+    
+  <div class="whole-left-container">
+ 
+ <!--in this i have make the save button interactive and update the quantity while saving a neww number-->
+
+
+  </div>
+
+
+  <div class="whole-right-container">
+    <div class="whole-right-container-mini">
+    <h3 class="right-container-next">
+      Order Summary
+    </h3>
+    <table>
+      <tr>
+        <td>Items (3):</td>
+        <td>$42.75</td>
+
+      </tr>
+      <tr>
+        <td>Shipping & handling:
+</td>
+        <td>$4.99</td>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td><hr></td>
+      </tr>
+      <tr>
+        <td>Total before tax:
+</td>
+        <td>$47.74</td>
+
+      </tr>
+      <tr>
+        <td>Estimated tax (10%):
+</td>
+        <td>
+$4.77</td>
+
+      </tr>
+      <tr>
+        <tr>
+          <td><hr></td>
+          <td><hr></td>
+        </tr>
+        <td class="ordertotaltext">Order total:
+</td>
+        <td class="ordertotaltext">
+$52.51</td>
+
+      </tr>
+
+
+    </table>
+    <button class="placebutton">Place your order</button>
+</div>
+  </div>
+  </div>
+<script type="module" src="checkout.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.21/dayjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.23/dayjs.min.js" integrity="sha512-XEVgwGep2YaTBuaL+NyliCBBiKVkMy4Rpa0Camg4MBsd5qfpAf6ZQYwBadQTDGtpEex+hFN9q2yOw0saY7mj/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+
+  
+</body>
+</html>
