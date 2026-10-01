@@ -1,13 +1,14 @@
 *{
   margin:0px;
   padding: 0px;
-}
-header{
+  }
+header
+{
   display:flex;
   justify-content: space-between;
   padding: 20px;
   text-align: center;
-  
+     
   
 }
 .coloritemsspan{
@@ -39,7 +40,7 @@ header{
 }
 .deliverydate{
   color:green;
-   font-size: 23px;
+  font-size: 23px;
   
 
 }
@@ -99,6 +100,26 @@ header{
 
 
 }
+.inputupdate{
+  width:30px;
+  height:20px;
+  padding:2px;
+  display:none;
+
+}
+.save{
+  color:rgb(73, 117, 228);
+  cursor: pointer;
+  font-size: 18px;
+  display:none;
+
+}
+.active{
+  display:inline-flex;
+}
+.inactive{
+  display:none;
+  }
 .delete{
   display: inline-flex;
     color:rgb(73, 117, 228);
@@ -148,5 +169,3 @@ header{
   display:flex;
   align-items: start;
 }
-
-
